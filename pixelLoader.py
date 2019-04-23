@@ -32,9 +32,9 @@ def savePic(textDir, outPath):
 
 
 if __name__ == "__main__":
-    #dest = sys.argv[2]
-    #target = sys.argv[1]
-    target = "./out.jpg"
-    dest = "./out1.txt"
+    dest = sys.argv[2]
+    target = sys.argv[1]
+    #target = "./out.jpg"
+    #dest = "./out1.txt"
     loadPixel(target, dest)
     savePic("./result.txt", "1.jpg")
