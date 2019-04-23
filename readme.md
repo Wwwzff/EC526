@@ -11,3 +11,7 @@ Output for this script is a file containing pixels' rgb value matrix and size in
 
 ## Serial_InterFrame_Difference.cpp
 return a txt file containing difference matrix after processing
+Remember to set C++ version to 11 or higher when compiling
+```
+g++  Serial_InterFrame_Difference.cpp -std=c++11 -o out
+```
