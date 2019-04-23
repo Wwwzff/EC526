@@ -11,12 +11,11 @@ def loadPixel(picDir, outPath):
     img_matrix = np.array(img)
     print(img_matrix.shape)
 
-    for a in img.size:
-        outFile.write(str(a)+" ")
-    outFile.write("\n")
 
-    for i in range(img.size[0]):
-        for j in range(img.size[1]):
+    outFile.write(str(a[1])+" "+str(a[0])+"\n")
+
+    for i in range(img.size[1]):
+        for j in range(img.size[0]):
             for rgb in range(3):
                 outFile.write(str(img_matrix[i][j][rgb]))
                 outFile.write(" ")
