@@ -89,8 +89,6 @@ int main(int argc, const char * argv[]) {
     int i = sizes[0];
     int j = sizes[1];
     
-    outFile << i << " " << j << endl;
-    
     cout << sizes[0] << " " << sizes[1] << endl;
     cout << pixel[0][0][0] << endl;
     
@@ -102,7 +100,7 @@ int main(int argc, const char * argv[]) {
             for(int rgb=0;rgb<3;rgb++){
                 outPixels[a][b] = new int [3];
                 outPixels[a][b][rgb] = pixel2[a][b][rgb] - pixel[a][b][rgb];
-                outFile << outPixels << " ";
+                outFile << outPixels[a][b][rgb] << " ";
             }
         }
         outFile << endl;
