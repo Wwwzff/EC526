@@ -11,7 +11,7 @@ def loadPixel(picDir, outPath):
     img_matrix = np.array(img)
     print(img_matrix.shape)
 
-
+    a = img_matrix.shape
     outFile.write(str(a[1])+" "+str(a[0])+"\n")
 
     for i in range(img.size[1]):
