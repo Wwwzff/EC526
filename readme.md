@@ -29,7 +29,7 @@ pgc++ -Minfo=accel -fast -acc -ta=tesla:cc60 InterFrame_Difference_OpenACC.cpp -
 ```
 This version of parallel code is modified for ease of doing benchmark on test cases, so you might need to do 
 ```
-./out acc [128,256...]
+./out_acc [128,256...]
 ```
 which will load files with name test128_0.txt, test128_1.txt...
 
