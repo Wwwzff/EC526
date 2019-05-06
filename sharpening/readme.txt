@@ -7,3 +7,4 @@ The result will be written to result.txt in current repository.
 When I tried to run the code on SCC, I wrote 3 versions of the sharpening filter, all of which can be run on Clion IDE, please feel free to run the code.
 Please apply a GPU before running the code.
 If there is any problem please contact me, my email address is zby@bu.edu
+(This is the readme for SCC, please follow readme.md to run the serial code)
