@@ -51,3 +51,15 @@ To run the code you need to change the argument, for example:
 ./1d 256
 ```
 For 2d and 3d version, you can compile and run the code directly without argv.
+
+
+## smooth.cpp
+Serial code for image smoothing, it will print the running time and return a text file to current directory(targetFile is the input file), compile with:
+```
+g++ smooth.cpp -std=c++11 -o smooth
+```
+## smoothACC.cpp
+OpenACC code for image smoothing, set defined i, j to the size of image, targetFile is the input file, compile with:
+```
+pgc++ -Minfo=accel -fast -acc -ta=tesla:cc60 smoothACC.cpp -o smoothACC -std=c++11
+```
